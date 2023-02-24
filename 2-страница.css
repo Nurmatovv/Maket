@@ -1,0 +1,114 @@
+body {
+  background-image: url(./images/фон\ для\ резюме.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.about_me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about_me__title {
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+  width: 50%;
+}
+.about_me__list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.list__item_work {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  margin: 0 5%;
+  text-align: center;
+  border: 1px solid red;
+  background-color: brown;
+  position: relative;
+
+  transition: all ease-out 10s;
+  animation-name: work;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+/* animation .list__item_work start */
+@keyframes work {
+  0% {
+    top: 100px;
+    bottom: 200px;
+    background-color: teal;
+  }
+  25% {
+    top: 200px;
+    bottom: 100px;
+    background-color: violet;
+  }
+  50% {
+    top: 200px;
+    bottom: 200px;
+    background-color: violet;
+  }
+  75% {
+    top: 100px;
+    bottom: 200px;
+    background-color: black;
+  }
+  100% {
+    top: 150px;
+    bottom: 100px;
+  }
+}
+/* animation .list__item_work end */
+
+.list__item_born,
+.list__item_products {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  margin: 0 5%;
+  text-align: center;
+  border: 1px solid red;
+  background-color: brown;
+
+  transition: all ease-out 5s;
+}
+.list__item_work:hover {
+  width: 450px;
+  height: 200px;
+  background-color: rgb(226, 13, 13);
+  color: black;
+  border: 1px solid black;
+}
+
+.list__item_born:hover {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(32, 158, 154);
+  color: black;
+  border: 1px solid black;
+}
+.list__item_products:hover {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(173, 216, 16);
+  color: black;
+  border: 1px solid black;
+}
+.about_me__desc {
+  font-size: 20px;
+  color: white;
+}
+.about_me__list_title > a {
+  text-decoration: none;
+}
